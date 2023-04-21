@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>age-calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+
+
+<link rel = "stylesheet" href = "app.css">
+    <script src = "app.js"></script>
+</head>
+<body class="main_body">
+    <div class="left_side"></div>
+    <div class="center_side">
+        <div class="top"></div>
+        <div class="middle">
+            <div class="main">
+                <div class="main1">
+                    <div class="inp one">
+                        <div class="dispt"></div>
+                        <div class="disp1 dispm">D A Y</div>
+                        <div class="inp1 dispb">
+                            <input type="text" class="inpa date" id="dateIn" placeholder="DD">
+                            <div id="error1">
+                                This field is required
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="inp two">
+                        <div class="dispt"></div>
+                        <div class="disp2 dispm">M O N T H</div>
+                        <div class="inp2 dispb">
+                            <input type="text" class="inpa month" id="monthIn" placeholder="MM">
+                            <div id="error2">
+                                This field is required
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="inp three">
+                        <div class="dispt"></div>
+                        <div class="disp3 dispm">Y E A R</div>
+                        <div class="inp3 dispb">
+                            <input type="text" class="inpa year" id="yearIn" placeholder="YYYY">
+                            <div id="error3">
+                                This field is required
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="inp four"></div>
+                </div>
+                <div class="main2">
+                    <div class="main21">  
+                        <hr class="line">
+                    </div>
+                    <div class="main22"> 
+                        <div class="main221" id = "A221">
+                            - -
+                        </div>
+                        <div class="main222">
+                            years
+                        </div>
+                    </div>
+
+                    <div class="main23"> 
+                        <div class="main231" id="A231">
+                            - -
+                        </div>
+                        <div class="main232">
+                            months
+                        </div>
+                         
+                    </div>
+                    <div class="main24">
+                        <div class="main241" id="A241">
+                            - -
+                        </div>
+                        <div class="main242">
+                            days
+                        </div>
+                    </div>
+                    <div class="main25">  </div>
+
+                    
+                </div>
+                <button class="main3" onclick="start()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+                </button>
+            </div>
+        </div>
+        <div class="bottom"></div>
+    </div>
+    <div class="right_side"></div>
+</body>
+</html>
