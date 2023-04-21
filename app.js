@@ -44,7 +44,7 @@ function putValue(){
 
         
         var past = new Date(m + '/' + d + '/' + y);
-        let diffTime = (today - past);
+        let diffTime = BigInt(today - past);
         let f = 1;
         
         console.log(diffTime)
@@ -52,15 +52,19 @@ function putValue(){
             f = 0;
             error(1);
         }else{
-            const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
-            console.log(diffDays)
-            let y = Math.floor(diffDays / 365)
-            let ndiffDays = diffDays%365;
-            let m = Math.floor(ndiffDays / 31)
-            let nndiffDays = ndiffDays%31;
-            let d = nndiffDays;
             
-            console.log(y)
+            d = today.getDate() - d;
+            if (d <= 0){
+                d += 31;
+                m += 1;
+            }
+            m = today.getMonth() + 1 - m;
+
+            if (m <= 0){
+                m += 12;
+                y++;
+            }
+            y = today.getFullYear() - y; 
             document.getElementById("A221").innerHTML = y;
             document.getElementById("A231").innerHTML = m;
             document.getElementById("A241").innerHTML = d;
